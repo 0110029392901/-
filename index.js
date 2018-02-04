@@ -7,9 +7,12 @@ const bot = new TelegramBot(TOKEN, {polling: true})
 const KB = {
     vybor: 'Выбор города',
     pomosh: 'Поддержка',
-    soc: 'Оставить отзыв'
+    soc: 'Оставить отзыв',
+    back: 'Назад'
 }
+
 bot.onText(/\/start/, msg => {
+
     const text = 'Добро пожаловать в магазин vasyareper! Выберите город:'
 
     bot.sendMessage(msg.chat.id, text, {
@@ -18,8 +21,7 @@ bot.onText(/\/start/, msg => {
                 [KB.vybor, KB.pomosh, KB.soc]
             ]
         }
-    }
-
+    })
 })
 
 bot.on('message', msg=> {
@@ -31,5 +33,12 @@ bot.on('message', msg=> {
             break
         case KB.soc:
             break
+        case KB.back:
+            bot.sendMessage(msg.chat.id, 'Выберите пункт меню:', {
+
+            })
+            break
     }
+
 })
+
