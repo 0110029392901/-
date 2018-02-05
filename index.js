@@ -1,8 +1,23 @@
-const TelegramBot = require('node-telegram-bot-api')
+/* Just A Theoretical Explanation Of How it Should Function */
 
-const TOKEN = '526966802:AAEm_el5nQz50q-ldjIvqD2utNIORLvvzt4'
+// Node Packages
+const TelegramBot = require('node-telegram-bot-api');
+const express = require('express');
 
-const bot = new TelegramBot(TOKEN, {polling: true})
+// Telegram Bot
+const TOKEN = '526966802:AAEm_el5nQz50q-ldjIvqD2utNIORLvvzt4';
+const URL = 'https://qwertrt.herokuapp.com/';
+
+const bot = new TelegramBot(TOKEN);
+
+bot.setWebHook(`${URL}/bot${TOKEN}`);
+
+// Express
+const app = express();
+
+// Use Node-Telegram-Bot-API As An Express Middleware
+app.use(bot.webhookCallback((`/bot${TOKEN}`))
+// Updates Sent To Route Above
 
 const KB = {
     vybor: 'Выбор города',
@@ -42,3 +57,7 @@ bot.on('message', msg=> {
 
 })
 
+// Start Express Server
+app.listen(443, () => {
+    console.log(`Express listening on 443`)
+});
