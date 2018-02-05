@@ -10,7 +10,7 @@
     "node": "8.9.3"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "node-telegram-bot-api": "^0.30.0"
   }
