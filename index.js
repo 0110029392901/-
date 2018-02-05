@@ -36,7 +36,7 @@ bot.on('message', msg=> {
             bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ ПУНКТ МЕНЮ:", {
                 reply_markup: {
                     keyboard: [
-                        [KB.gorod]
+                        [KB.gorod, KB.otzivy]
                     ]
                 }
             })
