@@ -6,7 +6,9 @@ const bot = new TelegramBot(TOKEN, {polling: true})
 
 const KB = {
     vybor: 'ГЛАВНОЕ МЕНЮ',
-    gorod: 'ВЫБОР ГОРОДА'
+    gorod: 'ВЫБОР ГОРОДА',
+    otzivy: 'ОТЗЫВЫ',
+    support: 'ПОДДЕРЖКА'
 
 }
 
@@ -38,6 +40,8 @@ bot.on('message', msg=> {
                     ]
                 }
             })
+            break
+        case KB.otzivy:
             break
     }
 })
