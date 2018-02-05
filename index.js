@@ -5,10 +5,8 @@ const TOKEN = '526966802:AAEm_el5nQz50q-ldjIvqD2utNIORLvvzt4'
 const bot = new TelegramBot(TOKEN, {polling: true})
 
 const KB = {
-    vybor: 'ГЛАВНОЕ МЕНЮ',
-    pomosh: 'Поддержка',
-    soc: 'Оставить отзыв',
-    back: 'Назад'
+    vybor: 'ГЛАВНОЕ МЕНЮ'
+    
 }
 
 bot.onText(/\/start/, msg => {
@@ -21,7 +19,7 @@ bot.onText(/\/start/, msg => {
     bot.sendMessage(msg.chat.id, text, {
         reply_markup: {
             keyboard: [
-                [KB.vybor, KB.pomosh, KB.soc]
+                [KB.vybor]
             ]
         }
     })
