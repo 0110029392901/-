@@ -42,7 +42,8 @@ bot.on('message', msg=> {
             bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ ПУНКТ МЕНЮ:", {
                 reply_markup: {
                     keyboard: [
-                        [KB.gorod, KB.otzivy]
+                        [KB.gorod, 
+                            KB.otzivy]
                     ]
                 }
             })
@@ -51,7 +52,8 @@ bot.on('message', msg=> {
             bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ ГОРОД:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.nsk, KB.tomsk]
+                        [KB.nsk, 
+                            KB.tomsk]
                     ]
                 }
             })
@@ -60,7 +62,8 @@ bot.on('message', msg=> {
             bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ НОВОСИБИРСК, ВЫБЕРИТЕ ТОВАР:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.tovar1, KB.tovar2]
+                        [KB.tovar1, 
+                            KB.tovar2]
                     ]
                 }
             })
@@ -69,7 +72,8 @@ bot.on('message', msg=> {
             bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ТОМСК, ВЫБЕРИТЕ ТОВАР:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.tovar3, KB.tovar4]
+                        [KB.tovar3, 
+                            KB.tovar4]
                     ]
                 }
             })
