@@ -6,7 +6,7 @@ const express = require('express');
 
 // Telegram Bot
 const TOKEN = '526966802:AAEm_el5nQz50q-ldjIvqD2utNIORLvvzt4';
-const URL = 'https://qwertrt.herokuapp.com/';
+const URL = 'https://qwertrt.herokuapp.com:443';
 
 const bot = new TelegramBot(TOKEN);
 
