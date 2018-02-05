@@ -8,7 +8,13 @@ const KB = {
     vybor: 'ГЛАВНОЕ МЕНЮ',
     gorod: 'ВЫБОР ГОРОДА',
     otzivy: 'ОТЗЫВЫ',
-    support: 'ПОДДЕРЖКА'
+    support: 'ПОДДЕРЖКА',
+    nsk: 'НОВОСИБИРСК',
+    tomsk: 'ТОМСК',
+    tovar1: 'товар1',
+    tovar2: 'товар2',
+    tovar3: 'товар3',
+    tovar4: 'товар4'
 
 }
 
@@ -41,7 +47,40 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.otzivy:
+        case KB.gorod:
+            bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ ГОРОД:" , {
+                reply_markup: {
+                    keyboard: [
+                        [KB.nsk, KB.tomsk]
+                    ]
+                }
+            })
+            break
+        case  KB.nsk:
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ НОВОСИБИРСК, ВЫБЕРИТЕ ТОВАР:" , {
+                reply_markup: {
+                    keyboard: [
+                        [KB.tovar1, KB.tovar2]
+                    ]
+                }
+            })
+            break
+        case KB.tomsk:
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ТОМСК, ВЫБЕРИТЕ ТОВАР:" , {
+                reply_markup: {
+                    keyboard: [
+                        [KB.tovar3, KB.tovar4]
+                    ]
+                }
+            })
+            break
+        case KB.tovar1:
+            break
+        case KB.tovar2:
+            break
+        case KB.tovar3:
+            break
+        case KB.tovar4:
             break
     }
 })
