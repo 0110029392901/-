@@ -27,3 +27,5 @@ bot.on('message', (msg) => {
   // send a message to the chat acknowledging receipt of their message
   bot.sendMessage(chatId, 'Received your message');
 });
+
+require('http').createServer().listen(process.env.PORT || 5000).on('request', function(req, res){ res.end('') })
