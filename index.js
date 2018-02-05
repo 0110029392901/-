@@ -6,8 +6,7 @@ const bot = new TelegramBot(TOKEN, {polling: true})
 
 const KB = {
     vybor: 'ГЛАВНОЕ МЕНЮ',
-    gorod: 'ВЫБОР ГОРОДА',
-
+    gorod: 'ВЫБОР ГОРОДА'
 
 }
 
@@ -38,11 +37,9 @@ bot.on('message', msg=> {
                         [KB.gorod]
                     ]
                 }
-            }
+            })
             break
-
     }
-
 })
 
 
