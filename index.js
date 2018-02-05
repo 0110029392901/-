@@ -1,63 +1,35 @@
-/* Just A Theoretical Explanation Of How it Should Function */
+/**
+ * This example demonstrates setting up webhook
+ * on the Heroku platform.
+ */
 
-// Node Packages
-const TelegramBot = require('node-telegram-bot-api');
-const express = require('express');
 
-// Telegram Bot
-const TOKEN = '526966802:AAEm_el5nQz50q-ldjIvqD2utNIORLvvzt4';
-const URL = 'https://qwertrt.herokuapp.com:443';
+const TOKEN = process.env.TELEGRAM_TOKEN || '526966802:AAEm_el5nQz50q-ldjIvqD2utNIORLvvzt4';
+const TelegramBot = require('../..');
+const options = {
+  webHook: {
+    // Port to which you should bind is assigned to $PORT variable
+    // See: https://devcenter.heroku.com/articles/dynos#local-environment-variables
+    port: process.env.PORT
+    // you do NOT need to set up certificates since Heroku provides
+    // the SSL certs already (https://<app-name>.herokuapp.com)
+    // Also no need to pass IP because on Heroku you need to bind to 0.0.0.0
+  }
+};
+// Heroku routes from port :443 to $PORT
+// Add URL of your app to env variable or enable Dyno Metadata
+// to get this automatically
+// See: https://devcenter.heroku.com/articles/dyno-metadata
+const url = process.env.APP_URL || 'https://qwertrt.herokuapp.com:443';
+const bot = new TelegramBot(TOKEN, options);
 
-const bot = new TelegramBot(TOKEN);
 
-bot.setWebHook(`${URL}/bot${TOKEN}`);
+// This informs the Telegram servers of the new webhook.
+// Note: we do not need to pass in the cert, as it already provided
+bot.setWebHook(`${url}/bot${TOKEN}`);
 
-// Express
-const app = express();
 
-// Use Node-Telegram-Bot-API As An Express Middleware
-app.use(bot.webhookCallback((`/bot${TOKEN}`))
-// Updates Sent To Route Above
-
-const KB = {
-    vybor: 'Выбор города',
-    pomosh: 'Поддержка',
-    soc: 'Оставить отзыв',
-    back: 'Назад'
-}
-
-bot.onText(/\/start/, msg => {
-
-    const text = 'Добро пожаловать в магазин vasyareper! Выберите город:'
-
-    bot.sendMessage(msg.chat.id, text, {
-        reply_markup: {
-            keyboard: [
-                [KB.vybor, KB.pomosh, KB.soc]
-            ]
-        }
-    })
-})
-
-bot.on('message', msg=> {
-
-    switch (msg.text) {
-        case KB.vybor:
-            break
-        case KB.pomosh:
-            break
-        case KB.soc:
-            break
-        case KB.back:
-            bot.sendMessage(msg.chat.id, 'Выберите пункт меню:', {
-
-            })
-            break
-    }
-
-})
-
-// Start Express Server
-app.listen(443, () => {
-    console.log(`Express listening on 443`)
+// Just to ping!
+bot.on('message', function onMessage(msg) {
+  bot.sendMessage(msg.chat.id, 'I am alive on Heroku!');
 });
