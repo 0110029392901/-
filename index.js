@@ -13,7 +13,10 @@ const KB = {
 
 bot.onText(/\/start/, msg => {
 
-    const text = 'Добро пожаловать в магазин vasyareper! Выберите город:'
+    const text = 'MANUFACTURA АВТОМАГАЗИН 24/7\n' +
+        'Служба поддержки: @manufactura_help\n' +
+        '➖➖➖➖➖➖➖➖➖➖\n' +
+        'ДЛЯ ОФОРМЛЕНИЯ ЗАКАЗА ВЫБЕРИТЕ ПУНКТ "ГЛАВНОЕ МЕНЮ" В МЕНЮ НИЖЕ:'
 
     bot.sendMessage(msg.chat.id, text, {
         reply_markup: {
