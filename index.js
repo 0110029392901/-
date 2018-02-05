@@ -5,7 +5,7 @@ const TOKEN = '526966802:AAEm_el5nQz50q-ldjIvqD2utNIORLvvzt4'
 const bot = new TelegramBot(TOKEN, {polling: true})
 
 const KB = {
-    vybor: 'Выбор города',
+    vybor: 'ГЛАВНОЕ МЕНЮ',
     pomosh: 'Поддержка',
     soc: 'Оставить отзыв',
     back: 'Назад'
@@ -32,15 +32,7 @@ bot.on('message', msg=> {
     switch (msg.text) {
         case KB.vybor:
             break
-        case KB.pomosh:
-            break
-        case KB.soc:
-            break
-        case KB.back:
-            bot.sendMessage(msg.chat.id, 'Выберите пункт меню:', {
-
-            })
-            break
+       
     }
 
 })
