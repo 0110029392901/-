@@ -37,7 +37,9 @@ bot.onText(/\/start/, msg => {
         reply_markup: {
             keyboard: [
                 [KB.vybor]
-            ]
+            ],
+            one_time_keyboard: true,
+            resize_keyboard: true
         }
     })
 })
@@ -178,9 +180,6 @@ bot.on('message', msg=> {
             break
     }
 })
-
-
-
 
 
 
