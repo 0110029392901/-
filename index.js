@@ -51,7 +51,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.gorod,
-                            KB.otzivy]
+                            KB.otzivy, KB.back]
                     ]
                 }
             })
@@ -61,7 +61,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.nsk,
-                            KB.tomsk]
+                            KB.tomsk, KB.back]
                     ]
                 }
             })
@@ -71,7 +71,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.nskcentr,
-                            KB.nskdzer]
+                            KB.nskdzer, KB.back]
                     ]
                 }
             })
@@ -81,7 +81,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.tomskokt,
-                            KB.tomsksov]
+                            KB.tomsksov, KB.back]
                     ]
                 }
             })
@@ -91,7 +91,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.tovar3,
-                            KB.tovar4]
+                            KB.tovar4, KB.back]
                     ]
                 }
             })
@@ -101,7 +101,7 @@ bot.on('message', msg=> {
             reply_markup: {
                 keyboard: [
                     [KB.tovar3,
-                        KB.tovar4]
+                        KB.tovar4, KB.back]
                 ]
             }
         })
@@ -111,7 +111,7 @@ bot.on('message', msg=> {
             reply_markup: {
                 keyboard: [
                     [KB.tovar1,
-                        KB.tovar2]
+                        KB.tovar2, KB.back]
                 ]
             }
         })
@@ -121,7 +121,7 @@ bot.on('message', msg=> {
             reply_markup: {
                 keyboard: [
                     [KB.tovar1,
-                        KB.tovar2]
+                        KB.tovar2, KB.back]
                 ]
             }
         })
@@ -131,7 +131,7 @@ bot.on('message', msg=> {
             reply_markup: {
                 keyboard: [
                     [KB.bitcoin,
-                        KB.qiwi]
+                        KB.qiwi, KB.back]
                 ]
             }
         })
@@ -141,7 +141,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.bitcoin,
-                            KB.qiwi]
+                            KB.qiwi, KB.back]
                     ]
                 }
             })
@@ -151,7 +151,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.bitcoin,
-                            KB.qiwi]
+                            KB.qiwi, KB.back]
                     ]
                 }
             })
@@ -161,7 +161,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.bitcoin,
-                            KB.qiwi]
+                            KB.qiwi, KB.back]
                     ]
                 }
             })
@@ -171,7 +171,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.gorod,
-                            KB.otzivy]
+                            KB.otzivy, KB.back]
                     ]
                 }
             })
