@@ -21,7 +21,8 @@ const KB = {
     tovar3: 'товар3',
     tovar4: 'товар4',
     bitcoin: 'BITCOIN',
-    qiwi: 'QIWI'
+    qiwi: 'QIWI',
+    back: 'ГЛАВНОЕ МЕНЮ'
 
 }
 
@@ -165,8 +166,20 @@ bot.on('message', msg=> {
                 }
             })
             break
+        case KB.back:
+            bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ ПУНКТ МЕНЮ:", {
+                reply_markup: {
+                    keyboard: [
+                        [KB.gorod,
+                            KB.otzivy]
+                    ]
+                }
+            })
+            break
     }
 })
+
+
 
 
 
