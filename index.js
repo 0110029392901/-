@@ -95,41 +95,45 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.nskdzer(msg.chat.id, "ВЫ ВЫБРАЛИ НОВОСИБИРСК ДЗЕРЖИНСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
+        case KB.nskdzer:
+        bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ НОВОСИБИРСК ДЗЕРЖИНСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
             reply_markup: {
                 keyboard: [
                     [KB.tovar3,
                         KB.tovar4]
                 ]
             }
-        }):
+        })
             break
-        case KB.tomsksov(msg.chat.id, "ВЫ ВЫБРАЛИ ТОМСК СОВЕТСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
+        case KB.tomsksov:
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ТОМСК СОВЕТСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
             reply_markup: {
                 keyboard: [
                     [KB.tovar1,
                         KB.tovar2]
                 ]
             }
-        }):
+        })
             break
-        case KB.tomskokt(msg.chat.id, "ВЫ ВЫБРАЛИ ТОМСК ОКТЯБРЬСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
+        case KB.tomskokt:
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ТОМСК ОКТЯБРЬСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
             reply_markup: {
                 keyboard: [
                     [KB.tovar1,
                         KB.tovar2]
                 ]
             }
-        }):
+        })
             break
-        case KB.tovar1(msg.chat.id, "ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ:" , {
+        case KB.tovar1:
+            bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ:" , {
             reply_markup: {
                 keyboard: [
                     [KB.bitcoin,
                         KB.qiwi]
                 ]
             }
-        }):
+        })
             break
         case KB.tovar2:
             break
