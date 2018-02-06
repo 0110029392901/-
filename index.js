@@ -22,7 +22,9 @@ const KB = {
     tovar4: 'товар4',
     bitcoin: 'BITCOIN',
     qiwi: 'QIWI',
-    back: 'ГЛАВНОЕ МЕНЮ'
+    back: 'ГЛАВНОЕ МЕНЮ',
+    check: 'ПРОВЕРКА ЗАКАЗА',
+    recheck: 'ПРОВЕРКА ЗАКАЗА'
 
 }
 
@@ -203,6 +205,42 @@ bot.on('message', msg=> {
                     resize_keyboard: true
                 }
             })
+            break
+        case KB.bitcoin:
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ОПЛАТУ BITCOIN, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 НА КОШЕЛЕК *BTC*", {
+                reply_markup: {
+                    keyboard: [
+                        [KB.check],
+                        [ KB.back]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
+                }
+            })
+            break
+        case KB.qiwi:
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ОПЛАТУ QIWI, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 НА КОШЕЛЕК *QIWI* И НАЖМИТЕ ПУНКТ 'ПРОВЕРКА ЗАКАЗА'", {
+                reply_markup: {
+                    keyboard: [
+                        [KB.check],
+                        [ KB.back]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
+                }
+            })
+            break
+        case KB.check:
+        bot.sendMessage(msg.chat.id, "ВАШ БАЛАНС 0р. ДЛЯ ПОВТОРНОЙ ПРОВЕРКИ ЗАКАЗА НАЖМИТЕ 'ПРОВЕРКА ЗАКАЗА'", {
+            reply_markup: {
+                keyboard: [
+                    [KB.check],
+                    [KB.back]
+                ],
+                one_time_keyboard: true,
+                resize_keyboard: true
+            }
+        })
             break
     }
 })
