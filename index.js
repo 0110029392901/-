@@ -53,7 +53,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.gorod,
-                            KB.otzivy, KB.back]
+                            KB.otzivy],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
