@@ -65,7 +65,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.nsk,
-                            KB.tomsk, KB.back]
+                            KB.tomsk],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -77,7 +77,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.nskcentr,
-                            KB.nskdzer, KB.back]
+                            KB.nskdzer],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -89,7 +89,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.tomskokt,
-                            KB.tomsksov, KB.back]
+                            KB.tomsksov],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -101,7 +101,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.tovar3,
-                            KB.tovar4, KB.back]
+                            KB.tovar4],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -109,59 +109,59 @@ bot.on('message', msg=> {
             })
             break
         case KB.nskdzer:
-        bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ НОВОСИБИРСК ДЗЕРЖИНСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
-            reply_markup: {
-                keyboard: [
-                    [KB.tovar3,
-                        KB.tovar4, KB.back]
-                ],
-                one_time_keyboard: true,
-                resize_keyboard: true
-            }
-        })
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ НОВОСИБИРСК ДЗЕРЖИНСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
+                reply_markup: {
+                    keyboard: [
+                        [KB.tovar3,
+                            KB.tovar4],[ KB.back]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
+                }
+            })
             break
         case KB.tomsksov:
             bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ТОМСК СОВЕТСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
-            reply_markup: {
-                keyboard: [
-                    [KB.tovar1,
-                        KB.tovar2, KB.back]
-                ],
-                one_time_keyboard: true,
-                resize_keyboard: true
-            }
-        })
+                reply_markup: {
+                    keyboard: [
+                        [KB.tovar1,
+                            KB.tovar2],[ KB.back]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
+                }
+            })
             break
         case KB.tomskokt:
             bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ТОМСК ОКТЯБРЬСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
-            reply_markup: {
-                keyboard: [
-                    [KB.tovar1,
-                        KB.tovar2, KB.back]
-                ],
-                one_time_keyboard: true,
-                resize_keyboard: true
-            }
-        })
+                reply_markup: {
+                    keyboard: [
+                        [KB.tovar1,
+                            KB.tovar2],[ KB.back]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
+                }
+            })
             break
         case KB.tovar1:
             bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ:" , {
-            reply_markup: {
-                keyboard: [
-                    [KB.bitcoin,
-                        KB.qiwi, KB.back]
-                ],
-                one_time_keyboard: true,
-                resize_keyboard: true
-            }
-        })
+                reply_markup: {
+                    keyboard: [
+                        [KB.bitcoin,
+                            KB.qiwi],[ KB.back]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
+                }
+            })
             break
         case KB.tovar2:
             bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ:" , {
                 reply_markup: {
                     keyboard: [
                         [KB.bitcoin,
-                            KB.qiwi, KB.back]
+                            KB.qiwi],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -173,7 +173,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.bitcoin,
-                            KB.qiwi, KB.back]
+                            KB.qiwi],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -185,7 +185,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.bitcoin,
-                            KB.qiwi, KB.back]
+                            KB.qiwi],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -197,7 +197,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.gorod,
-                            KB.otzivy, KB.back]
+                            KB.otzivy],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
