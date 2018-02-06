@@ -136,10 +136,34 @@ bot.on('message', msg=> {
         })
             break
         case KB.tovar2:
+            bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ:" , {
+                reply_markup: {
+                    keyboard: [
+                        [KB.bitcoin,
+                            KB.qiwi]
+                    ]
+                }
+            })
             break
         case KB.tovar3:
+            bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ:" , {
+                reply_markup: {
+                    keyboard: [
+                        [KB.bitcoin,
+                            KB.qiwi]
+                    ]
+                }
+            })
             break
         case KB.tovar4:
+            bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ:" , {
+                reply_markup: {
+                    keyboard: [
+                        [KB.bitcoin,
+                            KB.qiwi]
+                    ]
+                }
+            })
             break
     }
 })
