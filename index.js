@@ -9,12 +9,19 @@ const KB = {
     gorod: 'ВЫБОР ГОРОДА',
     otzivy: 'ОТЗЫВЫ',
     support: 'ПОДДЕРЖКА',
+    price: 'ПРАЙС',
+    nskdzer: 'ДЗЕРЖИНСКИЙ',
+    nskcentr: 'ЦЕНТР',
+    tomskokt: 'ОКТЯБРЬСКИЙ',
+    tomsksov: 'СОВЕТСКИЙ',
     nsk: 'НОВОСИБИРСК',
     tomsk: 'ТОМСК',
     tovar1: 'товар1',
     tovar2: 'товар2',
     tovar3: 'товар3',
-    tovar4: 'товар4'
+    tovar4: 'товар4',
+    bitcoin: 'BITCOIN',
+    qiwi: 'QIWI'
 
 }
 
@@ -42,7 +49,7 @@ bot.on('message', msg=> {
             bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ ПУНКТ МЕНЮ:", {
                 reply_markup: {
                     keyboard: [
-                        [KB.gorod, 
+                        [KB.gorod,
                             KB.otzivy]
                     ]
                 }
@@ -52,33 +59,77 @@ bot.on('message', msg=> {
             bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ ГОРОД:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.nsk, 
+                        [KB.nsk,
                             KB.tomsk]
                     ]
                 }
             })
             break
         case  KB.nsk:
-            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ НОВОСИБИРСК, ВЫБЕРИТЕ ТОВАР:" , {
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ НОВОСИБИРСК, ВЫБЕРИТЕ РАЙОН:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.tovar1, 
-                            KB.tovar2]
+                        [KB.nskcentr,
+                            KB.nskdzer]
                     ]
                 }
             })
             break
         case KB.tomsk:
-            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ТОМСК, ВЫБЕРИТЕ ТОВАР:" , {
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ТОМСК, ВЫБЕРИТЕ РАЙОН:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.tovar3, 
+                        [KB.tomskokt,
+                            KB.tomsksov]
+                    ]
+                }
+            })
+            break
+        case KB.nskcentr:
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ НОВОСИБИРСК ЦЕНТРАЛЬНЫЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
+                reply_markup: {
+                    keyboard: [
+                        [KB.tovar3,
                             KB.tovar4]
                     ]
                 }
             })
             break
-        case KB.tovar1:
+        case KB.nskdzer(msg.chat.id, "ВЫ ВЫБРАЛИ НОВОСИБИРСК ДЗЕРЖИНСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
+            reply_markup: {
+                keyboard: [
+                    [KB.tovar3,
+                        KB.tovar4]
+                ]
+            }
+        }):
+            break
+        case KB.tomsksov(msg.chat.id, "ВЫ ВЫБРАЛИ ТОМСК СОВЕТСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
+            reply_markup: {
+                keyboard: [
+                    [KB.tovar1,
+                        KB.tovar2]
+                ]
+            }
+        }):
+            break
+        case KB.tomskokt(msg.chat.id, "ВЫ ВЫБРАЛИ ТОМСК ОКТЯБРЬСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
+            reply_markup: {
+                keyboard: [
+                    [KB.tovar1,
+                        KB.tovar2]
+                ]
+            }
+        }):
+            break
+        case KB.tovar1(msg.chat.id, "ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ:" , {
+            reply_markup: {
+                keyboard: [
+                    [KB.bitcoin,
+                        KB.qiwi]
+                ]
+            }
+        }):
             break
         case KB.tovar2:
             break
