@@ -54,7 +54,9 @@ bot.on('message', msg=> {
                     keyboard: [
                         [KB.gorod,
                             KB.otzivy, KB.back]
-                    ]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
                 }
             })
             break
@@ -64,7 +66,9 @@ bot.on('message', msg=> {
                     keyboard: [
                         [KB.nsk,
                             KB.tomsk, KB.back]
-                    ]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
                 }
             })
             break
@@ -74,7 +78,9 @@ bot.on('message', msg=> {
                     keyboard: [
                         [KB.nskcentr,
                             KB.nskdzer, KB.back]
-                    ]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
                 }
             })
             break
@@ -84,7 +90,9 @@ bot.on('message', msg=> {
                     keyboard: [
                         [KB.tomskokt,
                             KB.tomsksov, KB.back]
-                    ]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
                 }
             })
             break
@@ -94,7 +102,9 @@ bot.on('message', msg=> {
                     keyboard: [
                         [KB.tovar3,
                             KB.tovar4, KB.back]
-                    ]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
                 }
             })
             break
@@ -104,7 +114,9 @@ bot.on('message', msg=> {
                 keyboard: [
                     [KB.tovar3,
                         KB.tovar4, KB.back]
-                ]
+                ],
+                one_time_keyboard: true,
+                resize_keyboard: true
             }
         })
             break
@@ -114,7 +126,9 @@ bot.on('message', msg=> {
                 keyboard: [
                     [KB.tovar1,
                         KB.tovar2, KB.back]
-                ]
+                ],
+                one_time_keyboard: true,
+                resize_keyboard: true
             }
         })
             break
@@ -124,7 +138,9 @@ bot.on('message', msg=> {
                 keyboard: [
                     [KB.tovar1,
                         KB.tovar2, KB.back]
-                ]
+                ],
+                one_time_keyboard: true,
+                resize_keyboard: true
             }
         })
             break
@@ -134,7 +150,9 @@ bot.on('message', msg=> {
                 keyboard: [
                     [KB.bitcoin,
                         KB.qiwi, KB.back]
-                ]
+                ],
+                one_time_keyboard: true,
+                resize_keyboard: true
             }
         })
             break
@@ -144,7 +162,9 @@ bot.on('message', msg=> {
                     keyboard: [
                         [KB.bitcoin,
                             KB.qiwi, KB.back]
-                    ]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
                 }
             })
             break
@@ -154,7 +174,9 @@ bot.on('message', msg=> {
                     keyboard: [
                         [KB.bitcoin,
                             KB.qiwi, KB.back]
-                    ]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
                 }
             })
             break
@@ -164,7 +186,9 @@ bot.on('message', msg=> {
                     keyboard: [
                         [KB.bitcoin,
                             KB.qiwi, KB.back]
-                    ]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
                 }
             })
             break
@@ -174,7 +198,9 @@ bot.on('message', msg=> {
                     keyboard: [
                         [KB.gorod,
                             KB.otzivy, KB.back]
-                    ]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
                 }
             })
             break
