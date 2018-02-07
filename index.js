@@ -4,8 +4,6 @@ const TOKEN = '526966802:AAEm_el5nQz50q-ldjIvqD2utNIORLvvzt4'
 
 const bot = new TelegramBot(TOKEN, {polling: true})
 
-x = [1, 2, 3, 4, 5]
-
 const KB = {
     vybor: 'ГЛАВНОЕ МЕНЮ',
     gorod: 'ВЫБОР ГОРОДА',
@@ -46,7 +44,7 @@ bot.onText(/\/start/, msg => {
             resize_keyboard: true
         }
     })
-    bot.sendDocument(chatId, 1.gif)
+    
 })
 
 
