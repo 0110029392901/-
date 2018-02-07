@@ -46,6 +46,7 @@ bot.onText(/\/start/, msg => {
             resize_keyboard: true
         }
     })
+    bot.sendDocument(chatId, 1.gif)
 })
 
 
