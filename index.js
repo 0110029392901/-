@@ -219,7 +219,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.qiwi:
-            bot.sendMessage(msg.chat.id, 'ВЫ ВЫБРАЛИ ОПЛАТУ QIWI, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 С КОММЕНТАРИЕМ ${msg.chat.first_name} НА КОШЕЛЕК *QIWI* C КОММЕНТАРИЕМ И НАЖМИТЕ ПУНКТ ПРОВЕРКА ЗАКАЗA', {
+            bot.sendMessage(msg.chat.id, 'ВЫ ВЫБРАЛИ ОПЛАТУ QIWI, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 С КОММЕНТАРИЕМ НА КОШЕЛЕК *QIWI* C КОММЕНТАРИЕМ И НАЖМИТЕ ПУНКТ ПРОВЕРКА ЗАКАЗA', {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
