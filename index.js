@@ -207,7 +207,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.bitcoin:
-            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ОПЛАТУ BITCOIN, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 НА КОШЕЛЕК *BTC*", {
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ОПЛАТУ BITCOIN, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 \n${msg.from.first_name} НА КОШЕЛЕК *BTC*", {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
