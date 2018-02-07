@@ -209,7 +209,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.bitcoin:
-            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ОПЛАТУ BITCOIN, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 НА КОШЕЛЕК *BTC*", {
+            bot.sendMessage(msg.chat.id, 'ВЫ ВЫБРАЛИ ОПЛАТУ QIWI, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 НА *QIWI* C КОММЕНТАРИЕМ: ' + msg.from.username, {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -221,7 +221,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.qiwi:
-            bot.sendMessage(msg.chat.id, 'ВЫ ВЫБРАЛИ ОПЛАТУ QIWI, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 С КОММЕНТАРИЕМ НА КОШЕЛЕК *QIWI* C КОММЕНТАРИЕМ ' + msg.from.username, {
+            bot.sendMessage(msg.chat.id, 'ВЫ ВЫБРАЛИ ОПЛАТУ QIWI, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 НА *QIWI* C КОММЕНТАРИЕМ: ' + msg.from.username, {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
