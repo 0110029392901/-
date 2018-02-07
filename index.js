@@ -4,6 +4,8 @@ const TOKEN = '526966802:AAEm_el5nQz50q-ldjIvqD2utNIORLvvzt4'
 
 const bot = new TelegramBot(TOKEN, {polling: true})
 
+x = [1, 2, 3, 4, 5]
+
 const KB = {
     vybor: 'ГЛАВНОЕ МЕНЮ',
     gorod: 'ВЫБОР ГОРОДА',
@@ -207,7 +209,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.bitcoin:
-            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ОПЛАТУ BITCOIN, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 \n${msg.from.first_name} НА КОШЕЛЕК *BTC*", {
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ОПЛАТУ BITCOIN, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 НА КОШЕЛЕК *BTC*", {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -219,7 +221,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.qiwi:
-            bot.sendMessage(msg.chat.id, 'ВЫ ВЫБРАЛИ ОПЛАТУ QIWI, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 С КОММЕНТАРИЕМ НА КОШЕЛЕК *QIWI* C КОММЕНТАРИЕМ И НАЖМИТЕ ПУНКТ ПРОВЕРКА ЗАКАЗA', {
+            bot.sendMessage(msg.chat.id, 'ВЫ ВЫБРАЛИ ОПЛАТУ QIWI, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 С КОММЕНТАРИЕМ' + msg.from.user_id, 'НА КОШЕЛЕК *QIWI* C КОММЕНТАРИЕМ И НАЖМИТЕ ПУНКТ ПРОВЕРКА ЗАКАЗA', {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
