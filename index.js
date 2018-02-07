@@ -219,7 +219,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.qiwi:
-            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ОПЛАТУ QIWI, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 НА КОШЕЛЕК *QIWI* И НАЖМИТЕ ПУНКТ 'ПРОВЕРКА ЗАКАЗА'", {
+            bot.sendMessage(msg.chat.id, 'ВЫ ВЫБРАЛИ ОПЛАТУ QIWI, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 С КОММЕНТАРИЕМ ${msg.chat.first_name} НА КОШЕЛЕК *QIWI* C КОММЕНТАРИЕМ И НАЖМИТЕ ПУНКТ ПРОВЕРКА ЗАКАЗA', {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -245,6 +245,6 @@ bot.on('message', msg=> {
     }
 })
 
-
+math.random
 
 require('http').createServer().listen(process.env.PORT || 5000).on('request', function(req, res){ res.end('') })
