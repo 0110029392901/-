@@ -6,14 +6,16 @@ const TOKEN = '482152456:AAGrw5bzZ8RxI5MQQ2v63VQ91JOmQlf47BA'
 const bot = new TelegramBot(TOKEN, {polling: true})
 
 const KB = {
-    vybor: 'ГЛАВНОЕ МЕНЮ',
-    gorod: 'ВЫБОР ГОРОДА',
-    otzivy: 'ПРАВИЛА',
-    support: 'ПОДДЕРЖКА',
-    price: 'ПРАЙС',
+    vybor: 'Главное меню',
+    gorod: 'Выбор города',
+    otzivy: 'Правила',
+    support: 'Поддержка',
+    price: 'Прайс',
     nskdzer: 'ЦАО',
     nskcentr: 'СВАО ВДНХ',
     losino: 'ЛОСИНООСТРОВСКИЙ ПАРК',
+    butovo: 'БУТОВО',
+    luber: 'ЛЮБЕРЦЫ',
     tomskokt: 'ЦЕНТР',
     tomsksov: 'СОВЕТСКИЙ',
     nsk: 'МСК',
@@ -24,18 +26,21 @@ const KB = {
     tovar4: 'товар4',
     bitcoin: 'BITCOIN',
     qiwi: 'QIWI',
-    back: 'ГЛАВНОЕ МЕНЮ',
-    check: 'ПРОВЕРКА ЗАКАЗА',
+    back: 'Главное меню',
+    check: 'Проверка заказа',
     recheck: 'ПРОВЕРКА ЗАКАЗА'
 
 }
 
 bot.onText(/\/start/, msg => {
 
-    const text = 'FAST MSK АВТОМАГАЗИН 24/7\n' +
-        'СЛУЖБА ПОДДЕРЖКИ @n' +
+    const text = 'Добро пожаловать в автомагазин' +
+        'FAST MSK 24/7\n' +
+        'Оператор @\n' +
+        'Оптовые покупки JABBER:' +
+        'Сайт: !!!ТЕХНИЧЕСКИЕ РАБОТЫ!!! ВСЕМ ЗАРЕГИСТРИРОВАННЫМ ПОЛЬЗОВАТЕЛЯМ ОТПИСАТЬ ОПЕРАТОРУ !!!'
         '➖➖➖➖➖➖➖➖➖➖\n' +
-        'ДЛЯ ОФОРМЛЕНИЯ ЗАКАЗА ВЫБЕРИТЕ ПУНКТ "ГЛАВНОЕ МЕНЮ" В МЕНЮ НИЖЕ:'
+        'Для оформления заказа выберите пункт "Главное меню" в меню ниже'
 
     bot.sendMessage(msg.chat.id, text, {
         reply_markup: {
@@ -54,7 +59,7 @@ bot.on('message', msg=> {
 
     switch (msg.text) {
         case KB.vybor:
-            bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ ПУНКТ МЕНЮ:", {
+            bot.sendMessage(msg.chat.id, "Выберите пункт меню:", {
                 reply_markup: {
                     keyboard: [
                         [KB.gorod,
@@ -66,7 +71,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.gorod:
-            bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ ГОРОД:" , {
+            bot.sendMessage(msg.chat.id, "Выберите город:" , {
                 reply_markup: {
                     keyboard: [
                         [KB.nsk,
@@ -78,7 +83,7 @@ bot.on('message', msg=> {
             })
             break
         case  KB.nsk:
-            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ МСК, ВЫБЕРИТЕ РАЙОН:" , {
+            bot.sendMessage(msg.chat.id, "Вы выбрали МСК, выберите район:" , {
                 reply_markup: {
                     keyboard: [
                         [KB.nskcentr,
@@ -90,7 +95,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.tomsk:
-            bot.sendMessage(msg.chat.id, "НЕТ ТОВАРОВ В ДАННОМ ГОРОДЕ" , {
+            bot.sendMessage(msg.chat.id, "В данном городе закончились товары" , {
                 reply_markup: {
                     keyboard: [
                         [KB.back]
@@ -101,7 +106,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.nskcentr:
-            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ СВАО ВДНХ МСК, ВЫБЕРИТЕ ТОВАР:" , {
+            bot.sendMessage(msg.chat.id, "Вы выбрали СВАО ВДНХ МСК, выберите товар:" , {
                 reply_markup: {
                     keyboard: [
                         [KB.tovar3,
@@ -113,7 +118,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.nskdzer:
-            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ЦАО МСК, ВЫБЕРИТЕ ТОВАР:" , {
+            bot.sendMessage(msg.chat.id, "Вы выбрали ЦАО МСК, выберите товар:" , {
                 reply_markup: {
                     keyboard: [
                         [KB.tovar3,
@@ -149,7 +154,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.tovar1:
-            bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ:" , {
+            bot.sendMessage(msg.chat.id, "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
                         [KB.bitcoin,
@@ -161,7 +166,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.tovar2:
-            bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ:" , {
+            bot.sendMessage(msg.chat.id, "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
                         [KB.bitcoin,
@@ -173,7 +178,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.tovar3:
-            bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ:" , {
+            bot.sendMessage(msg.chat.id, "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
                         [KB.bitcoin,
@@ -185,7 +190,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.tovar4:
-            bot.sendMessage(msg.chat.id, "ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ:" , {
+            bot.sendMessage(msg.chat.id, "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
                         [KB.bitcoin,
@@ -209,7 +214,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.bitcoin:
-            bot.sendMessage(msg.chat.id, 'ВЫ ВЫБРАЛИ ОПЛАТУ QIWI, ДЛЯ ПОЛУЧЕНИЯ ЗАКАЗА ОПЛАТИТЕ 1000 НА *QIWI* C КОММЕНТАРИЕМ: ' + msg.from.username, {
+            bot.sendMessage(msg.chat.id, 'Вы выбрали оплату QIWI, для получения заказа оплатите 1000 НА *QIWI* C КОММЕНТАРИЕМ: ' + msg.from.username, {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
