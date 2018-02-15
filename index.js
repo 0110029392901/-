@@ -1,3 +1,4 @@
+
 const TelegramBot = require('node-telegram-bot-api')
 
 const TOKEN = '482152456:AAGrw5bzZ8RxI5MQQ2v63VQ91JOmQlf47BA'
@@ -7,15 +8,16 @@ const bot = new TelegramBot(TOKEN, {polling: true})
 const KB = {
     vybor: 'ГЛАВНОЕ МЕНЮ',
     gorod: 'ВЫБОР ГОРОДА',
-    otzivy: 'ОТЗЫВЫ',
+    otzivy: 'ПРАВИЛА',
     support: 'ПОДДЕРЖКА',
     price: 'ПРАЙС',
-    nskdzer: 'ДЗЕРЖИНСКИЙ',
-    nskcentr: 'ЦЕНТР',
-    tomskokt: 'ОКТЯБРЬСКИЙ',
+    nskdzer: 'ЦАО',
+    nskcentr: 'СВАО ВДНХ',
+    losino: 'ЛОСИНООСТРОВСКИЙ ПАРК',
+    tomskokt: 'ЦЕНТР',
     tomsksov: 'СОВЕТСКИЙ',
-    nsk: 'НОВОСИБИРСК',
-    tomsk: 'ТОМСК',
+    nsk: 'МСК',
+    tomsk: 'ХИМКИ',
     tovar1: 'товар1',
     tovar2: 'товар2',
     tovar3: 'товар3',
@@ -30,8 +32,8 @@ const KB = {
 
 bot.onText(/\/start/, msg => {
 
-    const text = 'АВТОМАГАЗИН 24/7\n' +
-        'Служба поддержки: @n' +
+    const text = 'FAST MSK АВТОМАГАЗИН 24/7\n' +
+        'СЛУЖБА ПОДДЕРЖКИ @n' +
         '➖➖➖➖➖➖➖➖➖➖\n' +
         'ДЛЯ ОФОРМЛЕНИЯ ЗАКАЗА ВЫБЕРИТЕ ПУНКТ "ГЛАВНОЕ МЕНЮ" В МЕНЮ НИЖЕ:'
 
@@ -44,7 +46,7 @@ bot.onText(/\/start/, msg => {
             resize_keyboard: true
         }
     })
-    
+
 })
 
 
@@ -76,11 +78,11 @@ bot.on('message', msg=> {
             })
             break
         case  KB.nsk:
-            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ НОВОСИБИРСК, ВЫБЕРИТЕ РАЙОН:" , {
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ МСК, ВЫБЕРИТЕ РАЙОН:" , {
                 reply_markup: {
                     keyboard: [
                         [KB.nskcentr,
-                            KB.nskdzer],[ KB.back]
+                            KB.nskdzer, KB.losino],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -88,11 +90,10 @@ bot.on('message', msg=> {
             })
             break
         case KB.tomsk:
-            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ТОМСК, ВЫБЕРИТЕ РАЙОН:" , {
+            bot.sendMessage(msg.chat.id, "НЕТ ТОВАРОВ В ДАННОМ ГОРОДЕ" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.tomskokt,
-                            KB.tomsksov],[ KB.back]
+                        [KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -100,7 +101,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.nskcentr:
-            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ НОВОСИБИРСК ЦЕНТРАЛЬНЫЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ СВАО ВДНХ МСК, ВЫБЕРИТЕ ТОВАР:" , {
                 reply_markup: {
                     keyboard: [
                         [KB.tovar3,
@@ -112,7 +113,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.nskdzer:
-            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ НОВОСИБИРСК ДЗЕРЖИНСКИЙ РАЙОН, ВЫБЕРИТЕ ТОВАР:" , {
+            bot.sendMessage(msg.chat.id, "ВЫ ВЫБРАЛИ ЦАО МСК, ВЫБЕРИТЕ ТОВАР:" , {
                 reply_markup: {
                     keyboard: [
                         [KB.tovar3,
@@ -232,16 +233,16 @@ bot.on('message', msg=> {
             })
             break
         case KB.check:
-        bot.sendMessage(msg.chat.id, "ВАШ БАЛАНС 0р. ДЛЯ ПОВТОРНОЙ ПРОВЕРКИ ЗАКАЗА НАЖМИТЕ 'ПРОВЕРКА ЗАКАЗА'", {
-            reply_markup: {
-                keyboard: [
-                    [KB.check],
-                    [KB.back]
-                ],
-                one_time_keyboard: true,
-                resize_keyboard: true
-            }
-        })
+            bot.sendMessage(msg.chat.id, "ВАШ БАЛАНС 0р. ДЛЯ ПОВТОРНОЙ ПРОВЕРКИ ЗАКАЗА НАЖМИТЕ 'ПРОВЕРКА ЗАКАЗА'", {
+                reply_markup: {
+                    keyboard: [
+                        [KB.check],
+                        [KB.back]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
+                }
+            })
             break
     }
 })
