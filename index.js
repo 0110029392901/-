@@ -1,6 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api')
 
-const TOKEN = '526966802:AAEm_el5nQz50q-ldjIvqD2utNIORLvvzt4'
+const TOKEN = '482152456:AAGrw5bzZ8RxI5MQQ2v63VQ91JOmQlf47BA'
 
 const bot = new TelegramBot(TOKEN, {polling: true})
 
@@ -30,8 +30,8 @@ const KB = {
 
 bot.onText(/\/start/, msg => {
 
-    const text = 'VASYAREPER АВТОМАГАЗИН 24/7\n' +
-        'Служба поддержки: @vasyareper_help\n' +
+    const text = 'АВТОМАГАЗИН 24/7\n' +
+        'Служба поддержки: @n' +
         '➖➖➖➖➖➖➖➖➖➖\n' +
         'ДЛЯ ОФОРМЛЕНИЯ ЗАКАЗА ВЫБЕРИТЕ ПУНКТ "ГЛАВНОЕ МЕНЮ" В МЕНЮ НИЖЕ:'
 
