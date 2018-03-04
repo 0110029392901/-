@@ -172,7 +172,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.z:
-            bot.sendMessage(msg.from.id, "Ваш комментарий " + msg.from.uid, {
+            bot.sendMessage(msg.from.id, "Ваш комментарий " + msg.from.getuid(), {
             reply_markup: {
                 keyboard: [
                     [KB.cao],
