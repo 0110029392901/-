@@ -5,6 +5,7 @@ const TOKEN = '531195296:AAHu6-WxmVxo5LUmKezlY7kwWstDPHdFlSI'
 const bot = new TelegramBot(TOKEN, {polling: true})
 
 const KB = {
+    z: 'userid',
     vybor: 'Главное меню',
     gorod: 'Выбор города',
     otzivy: 'Правила',
@@ -95,7 +96,7 @@ bot.onText(/\/start/, msg => {
     bot.sendMessage(msg.chat.id, text, {
         reply_markup: {
             keyboard: [
-                [KB.vybor]
+                [KB.vybor, KB.z]
             ],
             one_time_keyboard: true,
             resize_keyboard: true
@@ -144,7 +145,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.gorod:
-            bot.sendMessage(msg.chat.id, "Выберите свой город в меню ниже:" + msg.uid , {
+            bot.sendMessage(msg.chat.id, "Выберите свой город в меню ниже:", {
                 reply_markup: {
                     keyboard: [
                         [KB.msk,
@@ -155,7 +156,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case  KB.msk:
+        case KB.msk:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
                 "Город: МОСКВA\n"  +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -170,6 +171,17 @@ bot.on('message', msg=> {
                 }
             })
             break
+        case KB.z:
+            bot.sendMessage(msg.from.id, "Ваш комментарий " + msg.from.userId, {
+            reply_markup: {
+                keyboard: [
+                    [KB.cao],
+                    [KB.svao], [KB.cher], [KB.butovo], [KB.luber],[ KB.back]
+                ],
+                one_time_keyboard: true,
+                resize_keyboard: true
+            }
+        })
         case KB.zelen:
             bot.sendMessage(msg.chat.id, "В данном городе закончились товары" , {
                 reply_markup: {
