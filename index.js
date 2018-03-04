@@ -172,7 +172,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.z:
-         var=msg.from.id
+         var fromId = msg.from.id;
             bot.sendMessage(from.id, "Ваш комментарий " + msg.from.getuid(), {
             reply_markup: {
                 keyboard: [
@@ -183,6 +183,7 @@ bot.on('message', msg=> {
                 resize_keyboard: true
             }
         })
+            break
         case KB.zelen:
             bot.sendMessage(msg.chat.id, "В данном городе закончились товары" , {
                 reply_markup: {
