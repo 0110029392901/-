@@ -144,7 +144,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.gorod:
-            bot.sendMessage(msg.chat.id, "Выберите свой город в меню ниже:" , {
+            bot.sendMessage(msg.chat.id, "Выберите свой город в меню ниже:" + msg.uid , {
                 reply_markup: {
                     keyboard: [
                         [KB.msk,
