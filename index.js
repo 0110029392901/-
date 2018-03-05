@@ -97,14 +97,14 @@ bot.onText(/\/start/, msg => {
         '    !!!ОТ 400р. ЗА КЛАД!!!\n' +
         '    НЕ УПУСТИ СВОЙ ШАНС\n' +
         'ПО ТРУДОУСТРОЙСТВУ ПИСАТЬ:\n' +
-        'JABBER: ' +
-    '➖➖➖➖➖➖➖➖➖➖\n' +
-    'Для оформления заказа выберите пункт "Оформить заказ" в меню ниже\n'
+        'JABBER: \n' +
+        '➖➖➖➖➖➖➖➖➖➖\n' +
+        'Для оформления заказа выберите пункт "Оформить заказ" в меню ниже'
 
     bot.sendMessage(msg.chat.id, text, {
         reply_markup: {
             keyboard: [
-                [KB.vybor, KB.z]
+                [KB.vybor]
             ],
             one_time_keyboard: true,
             resize_keyboard: true
@@ -122,7 +122,7 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.gorod,
-                            KB.otzivy],[ KB.back]
+                            KB.otzivy],[KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
