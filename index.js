@@ -39,7 +39,6 @@ const KB = {
     tovar18: 'товар18',
     tovar19: 'товар19',
     tovar20: 'товар20',
-    bitcoin: 'Bitcoin',
     bitcoin1: 'Bitcoin',
     bitcoin2: 'Bitcoin',
     bitcoin3: 'Bitcoin',
@@ -59,7 +58,7 @@ const KB = {
     bitcoin17: 'Bitcoin',
     bitcoin18: 'Bitcoin',
     bitcoin19: 'Bitcoin',
-    qiwi: 'Qiwi',
+    bitcoin20: 'Bitcoin',
     qiwi1: 'Qiwi',
     qiwi2: 'Qiwi',
     qiwi3: 'Qiwi',
@@ -79,6 +78,7 @@ const KB = {
     qiwi17: 'Qiwi',
     qiwi18: 'Qiwi',
     qiwi19: 'Qiwi',
+    qiwi20: 'Qiwi',
     back: 'Главное меню',
     check: 'Проверка заказа'
 
@@ -312,8 +312,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin],
-                        [KB.qiwi],[ KB.back]
+                        [KB.bitcoin1],
+                        [KB.qiwi1],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -330,8 +330,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin1],
-                        [KB.qiwi1],[ KB.back]
+                        [KB.bitcoin2],
+                        [KB.qiwi2],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -348,8 +348,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin2],
-                        [KB.qiwi2],[ KB.back]
+                        [KB.bitcoin3],
+                        [KB.qiwi3],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -366,8 +366,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin3],
-                        [KB.qiwi3],[ KB.back]
+                        [KB.bitcoin4],
+                        [KB.qiwi4],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -377,28 +377,10 @@ bot.on('message', msg=> {
         case KB.tovar5:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
-                "Район: ЦАО ВДНХ\n" +
+                "Район: ЦАО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "Стоимость: 1000р." +
-                "Выберите способ оплаты:" , {
-                reply_markup: {
-                    keyboard: [
-                        [KB.bitcoin4],
-                        [KB.qiwi4],[ KB.back]
-                    ],
-                    one_time_keyboard: true,
-                    resize_keyboard: true
-                }
-            })
-            break
-        case KB.tovar6:
-            bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Район: ЦАО ВДНХ\n" +
-                "Город: МОСКВА\n" +
-                "Товар: 'GreenDevil' 3gr.\n" +
-                "➖➖➖➖➖➖➖➖➖➖\n" +
-                "Стоимость: 1100р." +
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
@@ -410,13 +392,13 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.tovar7:
+        case KB.tovar6:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
-                "Район: ЦАО ВДНХ\n" +
+                "Товар: 'GreenDevil' 3gr.\n" +
+                "Район: ЦАО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
-                "Стоимость: 1200p." +
+                "Стоимость: 1100р." +
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
@@ -428,18 +410,36 @@ bot.on('message', msg=> {
                 }
             })
             break
+        case KB.tovar7:
+            bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
+                "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
+                "Район: ЦАО\n" +
+                "Город: МОСКВА\n" +
+                "➖➖➖➖➖➖➖➖➖➖\n" +
+                "Стоимость: 1200p." +
+                "Выберите способ оплаты:" , {
+                reply_markup: {
+                    keyboard: [
+                        [KB.bitcoin7],
+                        [KB.qiwi7],[ KB.back]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
+                }
+            })
+            break
         case KB.tovar8:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
                 "Товар: 'GreenDevil' 5gr.\n" +
-                "Район: ЦАО ВДНХ\n" +
+                "Район: ЦАО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "Стоимость: 1500p." +
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin7],
-                        [KB.qiwi7],[ KB.back]
+                        [KB.bitcoin8],
+                        [KB.qiwi8],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -456,8 +456,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin8],
-                        [KB.qiwi8],[ KB.back]
+                        [KB.bitcoin9],
+                        [KB.qiwi9],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -474,8 +474,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin9],
-                        [KB.qiwi9],[ KB.back]
+                        [KB.bitcoin10],
+                        [KB.qiwi10],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -492,8 +492,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin10],
-                        [KB.qiwi10],[ KB.back]
+                        [KB.bitcoin11],
+                        [KB.qiwi11],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -510,8 +510,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin11],
-                        [KB.qiwi11],[ KB.back]
+                        [KB.bitcoin12],
+                        [KB.qiwi12],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -528,8 +528,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin12],
-                        [KB.qiwi12],[ KB.back]
+                        [KB.bitcoin13],
+                        [KB.qiwi13],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -546,8 +546,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin13],
-                        [KB.qiwi13],[ KB.back]
+                        [KB.bitcoin14],
+                        [KB.qiwi14],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -564,8 +564,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin14],
-                        [KB.qiwi14],[ KB.back]
+                        [KB.bitcoin15],
+                        [KB.qiwi15],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -582,8 +582,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin15],
-                        [KB.qiwi15],[ KB.back]
+                        [KB.bitcoin16],
+                        [KB.qiwi16],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -600,8 +600,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin16],
-                        [KB.qiwi16],[ KB.back]
+                        [KB.bitcoin17],
+                        [KB.qiwi17],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -618,8 +618,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin17],
-                        [KB.qiwi17],[ KB.back]
+                        [KB.bitcoin18],
+                        [KB.qiwi18],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -636,8 +636,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin18],
-                        [KB.qiwi18],[ KB.back]
+                        [KB.bitcoin19],
+                        [KB.qiwi19],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -654,8 +654,8 @@ bot.on('message', msg=> {
                 "Выберите способ оплаты:" , {
                 reply_markup: {
                     keyboard: [
-                        [KB.bitcoin19],
-                        [KB.qiwi19],[ KB.back]
+                        [KB.bitcoin20],
+                        [KB.qiwi20],[ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -674,7 +674,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin:
+        case KB.bitcoin1:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
@@ -693,7 +693,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin1:
+        case KB.bitcoin2:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
@@ -712,7 +712,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin2:
+        case KB.bitcoin3:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 1gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
@@ -731,7 +731,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin3:
+        case KB.bitcoin4:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 3gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
@@ -750,7 +750,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin4:
+        case KB.bitcoin5:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: ЦАО\n" +
@@ -769,7 +769,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin5:
+        case KB.bitcoin6:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 3gr.\n" +
                 "Район: ЦАО\n" +
@@ -788,7 +788,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin6:
+        case KB.bitcoin7:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
                 "Район: ЦАО\n" +
@@ -807,7 +807,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin7:
+        case KB.bitcoin8:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 5gr.\n" +
                 "Район: ЦАО\n" +
@@ -826,7 +826,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin8:
+        case KB.bitcoin9:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 1gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
@@ -845,7 +845,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin9:
+        case KB.bitcoin10:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
@@ -864,7 +864,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin10:
+        case KB.bitcoin11:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 3gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
@@ -883,7 +883,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin11:
+        case KB.bitcoin12:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
@@ -902,7 +902,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin12:
+        case KB.bitcoin13:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 1gr.\n" +
                 "Район: БУТОВОn" +
@@ -921,7 +921,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin13:
+        case KB.bitcoin14:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 3gr.\n" +
                 "Район: БУТОВО\n" +
@@ -940,7 +940,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin14:
+        case KB.bitcoin15:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 5gr.\n" +
                 "Район: БУТОВО\n" +
@@ -959,7 +959,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin15:
+        case KB.bitcoin16:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 1gr.+0.5gr.\n" +
                 "Район: БУТОВО\n" +
@@ -978,7 +978,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin16:
+        case KB.bitcoin17:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 1gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
@@ -997,7 +997,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin17:
+        case KB.bitcoin18:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
@@ -1016,7 +1016,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin18:
+        case KB.bitcoin19:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 5gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
@@ -1035,7 +1035,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin19:
+        case KB.bitcoin20:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 1gr.+0.5gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
@@ -1054,7 +1054,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi:
+        case KB.qiwi1:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
             "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
             "Район: СВАО ВДНХ\n" +
@@ -1073,7 +1073,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi1:
+        case KB.qiwi2:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
@@ -1092,7 +1092,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi2:
+        case KB.qiwi3:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 1gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
@@ -1111,8 +1111,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-            break
-        case KB.qiwi3:
+        case KB.qiwi4:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 3gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
@@ -1131,7 +1130,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi4:
+        case KB.qiwi5:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: ЦАО\n" +
@@ -1150,7 +1149,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi5:
+        case KB.qiwi6:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 3gr.\n" +
                 "Район: ЦАО\n" +
@@ -1169,7 +1168,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi6:
+        case KB.qiwi7:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
                 "Район: ЦАО\n" +
@@ -1188,7 +1187,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi7:
+        case KB.qiwi8:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 5gr.\n" +
                 "Район: ЦАО\n" +
@@ -1207,7 +1206,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi8:
+        case KB.qiwi9:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 1gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
@@ -1226,7 +1225,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi9:
+        case KB.qiwi10:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
@@ -1245,7 +1244,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi10:
+        case KB.qiwi11:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 3gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
@@ -1264,7 +1263,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi11:
+        case KB.qiwi12:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
@@ -1283,7 +1282,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi12:
+        case KB.qiwi13:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 1gr.\n" +
                 "Район: БУТОВОn" +
@@ -1302,7 +1301,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi13:
+        case KB.qiwi14:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 3gr.\n" +
                 "Район: БУТОВО\n" +
@@ -1321,7 +1320,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi14:
+        case KB.qiwi15:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 5gr.\n" +
                 "Район: БУТОВО\n" +
@@ -1340,7 +1339,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi15:
+        case KB.qiwi16:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 1gr.+0.5gr.\n" +
                 "Район: БУТОВО\n" +
@@ -1359,7 +1358,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi16:
+        case KB.qiwi17:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
             "Товар: 'GreenDevil' 1gr.\n" +
             "Район: ЛЮБЕРЦЫ\n" +
@@ -1378,7 +1377,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi17:
+        case KB.qiwi18:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
@@ -1397,7 +1396,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi18:
+        case KB.qiwi19:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: 'GreenDevil' 5gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
@@ -1417,7 +1416,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.qiwi19:
+        case KB.qiwi20:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 1gr.+0.5gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
