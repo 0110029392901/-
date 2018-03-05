@@ -674,7 +674,7 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.bitcoin1:
+        case KB:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
                 "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
