@@ -5,19 +5,20 @@ const TOKEN = '531195296:AAHu6-WxmVxo5LUmKezlY7kwWstDPHdFlSI'
 const bot = new TelegramBot(TOKEN, {polling: true})
 
 const KB = {
-    z: 'userid',
-    vybor: 'Главное меню',
+    priv: 'Ежедневный привнот',
+    getpriv: 'Получить привнот',
+    vybor: 'Оформить заказ',
     gorod: 'Выбор города',
     otzivy: 'Правила',
     support: 'Поддержка',
     price: 'Прайс',
-    cao: 'ЦАО',
-    svao: 'СВАО ВДНХ',
-    cher: 'ЧЕРТАНОВО',
-    butovo: 'БУТОВО',
-    luber: 'ЛЮБЕРЦЫ',
-    msk: 'МОСКВА',
-    zelen: 'ЗЕЛЕНОГРАД',
+    cao: 'Цао',
+    svao: 'Свао Вднх',
+    cher: 'Чертаново',
+    butovo: 'Бутово',
+    luber: 'Люберцы',
+    msk: 'Москва',
+    zelen: 'Зеленоград',
     tovar1: 'товар1',
     tovar2: 'товар2',
     tovar3: 'товар3',
@@ -38,47 +39,47 @@ const KB = {
     tovar18: 'товар18',
     tovar19: 'товар19',
     tovar20: 'товар20',
-    bitcoin: 'BITCOIN',
-    bitcoin1: 'BITCOIN',
-    bitcoin2: 'BITCOIN',
-    bitcoin3: 'BITCOIN',
-    bitcoin4: 'BITCOIN',
-    bitcoin5: 'BITCOIN',
-    bitcoin6: 'BITCOIN',
-    bitcoin7: 'BITCOIN',
-    bitcoin8: 'BITCOIN',
-    bitcoin9: 'BITCOIN',
-    bitcoin10: 'BITCOIN',
-    bitcoin11: 'BITCOIN',
-    bitcoin12: 'BITCOIN',
-    bitcoin13: 'BITCOIN',
-    bitcoin14: 'BITCOIN',
-    bitcoin15: 'BITCOIN',
-    bitcoin16: 'BITCOIN',
-    bitcoin17: 'BITCOIN',
-    bitcoin18: 'BITCOIN',
-    bitcoin19: 'BITCOIN',
-    qiwi: 'QIWI',
-    qiwi1: 'QIWI',
-    qiwi2: 'QIWI',
-    qiwi3: 'QIWI',
-    qiwi4: 'QIWI',
-    qiwi5: 'QIWI',
-    qiwi6: 'QIWI',
-    qiwi7: 'QIWI',
-    qiwi8: 'QIWI',
-    qiwi9: 'QIWI',
-    qiwi10: 'QIWI',
-    qiwi11: 'QIWI',
-    qiwi12: 'QIWI',
-    qiwi13: 'QIWI',
-    qiwi14: 'QIWI',
-    qiwi15: 'QIWI',
-    qiwi16: 'QIWI',
-    qiwi17: 'QIWI',
-    qiwi18: 'QIWI',
-    qiwi19: 'QIWI',
-    back: 'Назад',
+    bitcoin: 'Bitcoin',
+    bitcoin1: 'Bitcoin',
+    bitcoin2: 'Bitcoin',
+    bitcoin3: 'Bitcoin',
+    bitcoin4: 'Bitcoin',
+    bitcoin5: 'Bitcoin',
+    bitcoin6: 'Bitcoin',
+    bitcoin7: 'Bitcoin',
+    bitcoin8: 'Bitcoin',
+    bitcoin9: 'Bitcoin',
+    bitcoin10: 'Bitcoin',
+    bitcoin11: 'Bitcoin',
+    bitcoin12: 'Bitcoin',
+    bitcoin13: 'Bitcoin',
+    bitcoin14: 'Bitcoin',
+    bitcoin15: 'Bitcoin',
+    bitcoin16: 'Bitcoin',
+    bitcoin17: 'Bitcoin',
+    bitcoin18: 'Bitcoin',
+    bitcoin19: 'Bitcoin',
+    qiwi: 'Qiwi',
+    qiwi1: 'Qiwi',
+    qiwi2: 'Qiwi',
+    qiwi3: 'Qiwi',
+    qiwi4: 'Qiwi',
+    qiwi5: 'Qiwi',
+    qiwi6: 'Qiwi',
+    qiwi7: 'Qiwi',
+    qiwi8: 'Qiwi',
+    qiwi9: 'Qiwi',
+    qiwi10: 'Qiwi',
+    qiwi11: 'Qiwi',
+    qiwi12: 'Qiwi',
+    qiwi13: 'Qiwi',
+    qiwi14: 'Qiwi',
+    qiwi15: 'Qiwi',
+    qiwi16: 'Qiwi',
+    qiwi17: 'Qiwi',
+    qiwi18: 'Qiwi',
+    qiwi19: 'Qiwi',
+    back: 'Главное меню',
     check: 'Проверка заказа'
 
 }
@@ -87,11 +88,18 @@ bot.onText(/\/start/, msg => {
 
     const text = 'Добро пожаловать в автомагазин\n' +
         'FAST SHOP MSK 24/7\n' +
+        '➖➖➖➖➖➖➖➖➖➖\n' +
         'Оператор @\n' +
         'Оптовые покупки JABBER:\n' +
-        'Сайт: !!!ТЕХНИЧЕСКИЕ РАБОТЫ!!! ВСЕМ ЗАРЕГИСТРИРОВАННЫМ ПОЛЬЗОВАТЕЛЯМ ОТПИСАТЬ ОПЕРАТОРУ !!!\n' +
+        'Сайт: !!!ТЕХНИЧЕСКИЕ РАБОТЫ!!! ВСЕМ ЗАРЕГИСТРИРОВАННЫМ ПОЛЬЗОВАТЕЛЯМ ОТПИСАТЬ ОПЕРАТОРУ!!!\n' +
+        '➖➖➖➖➖➖➖➖➖➖\n' +
+        '!!!ТРЕБУЮТСЯ МИНЁРЫ И ГРАФФИТЧИКИ ПО МСК!!!\n' +
+        '    !!!ОТ 400р. ЗА КЛАД!!!\n' +
+        '    НЕ УПУСТИ СВОЙ ШАНС\n' +
+        'ПО ТРУДОУСТРОЙСТВУ ПИСАТЬ:\n' +
+        'JABBER: ' +
     '➖➖➖➖➖➖➖➖➖➖\n' +
-    'Для оформления заказа выберите пункт "Главное меню" в меню ниже\n'
+    'Для оформления заказа выберите пункт "Оформить заказ" в меню ниже\n'
 
     bot.sendMessage(msg.chat.id, text, {
         reply_markup: {
@@ -122,7 +130,7 @@ bot.on('message', msg=> {
             })
             break
         case KB.otzivy:
-            bot.sendMessage(msg.chat.id, "Правила работы нашего магазна! перед покупкой ПРОЧЕСТЬ!\n" +
+            bot.sendMessage(msg.chat.id, "Правила работы нашего магазна! Перед покупкой ПРОЧЕСТЬ!\n" +
                 "\n" +
                 "Пункт 1.Приобретая товары в нашем магазина вы автоматически соглашаетесь со всеми ниже сказанными условиями!\n" +
                 "\n" +
@@ -130,7 +138,7 @@ bot.on('message', msg=> {
                 "\n" +
                 "Пункт 3.Если вы купили клад, и у вас там форс мажор в виде недовеса (его можно увидеть сразу на глаз), спутали товар, то Вы должны ОБЯЗАТЕЛЬНО НЕ ОТКРЫВАТЬ СВЕРТОК МЫ ЭТО УВИДИМ! СДЕЛАТЬ 3 ФОТО, А ИМЕННО ПАКЕТ РЯДОМ С ЗАЖИГАЛКОЙ, УПАКОВКУ ОТ СВЕРТКА И ФОТО ПАКЕТА НА ВЕСАХ \n" +
                 "\n" +
-                "Пункт 4.Если у вас не найден клад, то не стоит сразу писать что вас кинули и тем более думать такое, вам следует проверять все клады в дневное время, строго следовать указанием в описании, и не паниковать при его поиске, что бы не закопать его дальше, если все же у вас не найден клад, то вы должны предоставить оператору такие факты как, 3 ФОТО С МЕСТА, А ИМЕННО РАКУРС МЕСТА за 3-5 метро, место непосредорвенно вблизи, а так же фотографии где и как вы смотрели!\n" +
+                "Пункт 4.Если у вас не найден клад, то не стоит сразу писать что вас кинули и тем более думать такое, вам следует проверять все клады в дневное время, строго следовать указаниям в описании, и не паниковать при поиске, что бы не закопать его дальше, если все же у вас не найден клад, то вы должны предоставить оператору такие факты как, 3 ФОТО С МЕСТА, А ИМЕННО РАКУРС МЕСТА за 3-5 метро, место непосредорвенно вблизи, а так же фотографии где и как вы смотрели!\n" +
                 "\n" +
                 "Пункт 5. Мы не рекомендуем оставлять отзывы до какого-либо решения вашей ситуации, ибо мы все люди и не всегда можем оперативно ответить вам. но как только оператор увидит ваше сообщение, вы получите дальнейшние указание по решению вашей проблемы.\n" +
                 "\n" +
@@ -138,6 +146,35 @@ bot.on('message', msg=> {
                 reply_markup: {
                     keyboard: [
                         [KB.back]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
+                }
+            })
+            break
+        case KB.priv:
+            bot.sendMessage(msg.chat.id, "АКЦИЯ 'ЕЖЕДНЕВНЫЙ ПРИВНОТ' ОТ FAST SHOP\n" +
+                "➖➖➖➖➖➖➖➖➖➖\n" +
+                "Привнот обновляется ежедневно с 12 по 19 часов по МСК\n" +
+                "Стандартно в привноте лежит адрес с KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr. либо с  ROSS'GreenDevil' 3gr.\n" +
+                "В праздничные дни выдается привнот с !!!БОЛЕЕ ЩЕДРЫМИ ПОЗИЦИЯМИ!!!\n" +
+                "➖➖➖➖➖➖➖➖➖➖\n" +
+                "Привнот выдается в боте после нажатия кнопки 'Получить привнот' в меню ниже" , {
+                reply_markup: {
+                    keyboard: [
+                        [KB.getpriv], [KB.back]
+                    ],
+                    one_time_keyboard: true,
+                    resize_keyboard: true
+                }
+            })
+            break
+        case KB.getpriv:
+            bot.sendMessage(msg.chat.id, "Привнот на сегодня:\n" +
+                "https://privnote.com/wUe3mE3j#Bg3jrgLAQ", {
+                reply_markup: {
+                    keyboard: [
+                        [ KB.back]
                     ],
                     one_time_keyboard: true,
                     resize_keyboard: true
@@ -171,21 +208,11 @@ bot.on('message', msg=> {
                 }
             })
             break
-        case KB.z:
-         var fromId = msg.from.id;
-            bot.sendMessage(from.id, "Ваш комментарий " + msg.from.getuid(), {
-            reply_markup: {
-                keyboard: [
-                    [KB.cao],
-                    [KB.svao], [KB.cher], [KB.butovo], [KB.luber],[ KB.back]
-                ],
-                one_time_keyboard: true,
-                resize_keyboard: true
-            }
-        })
-            break
         case KB.zelen:
-            bot.sendMessage(msg.chat.id, "В данном городе закончились товары" , {
+            bot.sendMessage(msg.chat.id, "В данном городе закончились товары\n" +
+                "Работает ОПТ и ПРЕДЗАКАЗ\n" +
+                "Для оформления ОТПИСАТЬ ОПЕРАТОРУ @"
+                , {
                 reply_markup: {
                     keyboard: [
                         [KB.back]
