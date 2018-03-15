@@ -189,33 +189,33 @@ bot.on('message', msg=> {
                 "Москва\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "СВАО ВДНХ:\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 0.5gr.+0.5gr. - 1200р.\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 1gr.+0.5gr. - 2400р.\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 3gr.+0.5gr. - 3400р.\n" +
+                "KRIS-A29+BONUS ROSS'GreenDevil' 0.5gr.+0.5gr. - 1200р.\n" +
+                "KRIS-A29+BONUS ROSS'GreenDevil' 1gr.+0.5gr. - 2400р.\n" +
+                "KRIS-A29+BONUS ROSS'GreenDevil' 3gr.+0.5gr. - 3400р.\n" +
                 "\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "ЦАО:\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 0.3gr.+0.5gr. - 1000р.\n" +
-                "ROSS\\'GreenDevil\\' 3gr. - 1100р.\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 5gr. - 1500р.\n" +
+                "KRIS-A29+BONUS ROSS'GreenDevil' 0.3gr.+0.5gr. - 1000р.\n" +
+                "ROSS'GreenDevil' 3gr. - 1100р.\n" +
+                "KRIS-A29+BONUS ROSS'GreenDevil' 5gr. - 1500р.\n" +
                 "\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "ЧЕРТАНОВО:\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 1gr. - 600р.\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 0.3gr.+0.5gr. - 1000р.\n" +
-                "ROSS\\'GreenDevil\\' 3gr. - 1100р.\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 0.5gr.+0.5gr. - 1200р.\n" +
+                "KRIS-A29+BONUS ROSS'GreenDevil' 1gr. - 600р.\n" +
+                "KRIS-A29+BONUS ROSS'GreenDevil' 0.3gr.+0.5gr. - 1000р.\n" +
+                "ROSS'GreenDevil' 3gr. - 1100р.\n" +
+                "KRIS-A29+BONUS ROSS'GreenDevil' 0.5gr.+0.5gr. - 1200р.\n" +
                 "\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "БУТОВО:\n" +
-                "ROSS\\'GreenDevil\\' 3gr. - 1100р.\n" +
-                "ROSS\\'GreenDevil\\' 5gr. - 1500р.\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 1gr.+0.5gr. - 2400р.\n" +
+                "ROSS'GreenDevil' 3gr. - 1100р.\n" +
+                "ROSS'GreenDevil' 5gr. - 1500р.\n" +
+                "KRIS-A29+BONUS ROSS'GreenDevil' 1gr.+0.5gr. - 2400р.\n" +
                 "\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "ЛЮБЕРЦЫ:\n" +
-                "ROSS\\'GreenDevil\\' 5gr. - 1500р.\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 1gr.+0.5gr. - 2400р.\n" 
+                "ROSS'GreenDevil' 5gr. - 1500р.\n" +
+                "KRIS-A29+BONUS ROSS'GreenDevil' 1gr.+0.5gr. - 2400р.\n" 
                 , {
                 reply_markup: {
                     keyboard: [
@@ -254,7 +254,8 @@ bot.on('message', msg=> {
             })
             break
         case KB.zelen:
-            bot.sendMessage(msg.chat.id, "В данном городе закончились товары\n" +
+            bot.sendMessage(msg.chat.id, "В данном городе закончились товары.\n" +
+                "n\" +
                 "Работает ОПТ и ПРЕДЗАКАЗ\n" +
                 "Для оформления предзаказа ОТПИСАТЬ ОПЕРАТОРУ В ТЕЛЕГРАМ: @FASTMSK_HELP либо в JABBER: fastmsk@sj.ms"
                 , {
@@ -367,7 +368,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar2:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.5gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -385,7 +386,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar3:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 1gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 1gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -403,7 +404,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar4:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 3gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 3gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -421,7 +422,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar5:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: ЦАО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -439,7 +440,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar6:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: 'GreenDevil' 3gr.\n" +
+                "Товар: ROSS'GreenDevil' 3gr.\n" +
                 "Район: ЦАО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -457,7 +458,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar7:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.5gr.+0.5gr.\n" +
                 "Район: ЦАО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -475,7 +476,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar8:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: 'GreenDevil' 5gr.\n" +
+                "Товар: ROSS'GreenDevil' 5gr.\n" +
                 "Район: ЦАО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -493,7 +494,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar9:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: 'GreenDevil' 1gr.\n" +
+                "Товар: ROSS'GreenDevil' 1gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -511,7 +512,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar10:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -529,7 +530,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar11:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: 'GreenDevil' 3gr.\n" +
+                "Товар: ROSS'GreenDevil' 3gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -547,7 +548,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar12:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.5gr.+0.5gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -565,7 +566,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar13:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: 'GreenDevil' 1gr.\n" +
+                "Товар: ROSS'GreenDevil' 1gr.\n" +
                 "Район: БУТОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -583,7 +584,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar14:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: 'GreenDevil' 3gr.\n" +
+                "Товар: ROSS'GreenDevil' 3gr.\n" +
                 "Район: БУТОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -601,7 +602,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar15:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: 'GreenDevil' 5gr.\n" +
+                "Товар: ROSS'GreenDevil' 5gr.\n" +
                 "Район: БУТОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -619,7 +620,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar16:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 1gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 1gr.+0.5gr.\n" +
                 "Район: БУТОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -637,7 +638,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar17:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: 'GreenDevil' 1gr.\n" +
+                "Товар: ROSS'GreenDevil' 1gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -655,7 +656,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar18:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: 'KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
+                "Товар: 'KRIS-A29+BONUS ROSS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
                 "Город: МОСКВА\n" +
             "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -673,7 +674,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar19:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: 'GreenDevil' 5gr.\n" +
+                "Товар: ROSS'GreenDevil' 5gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
                 "Город: МОСКВА\n" +
             "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -691,7 +692,7 @@ bot.on('message', msg=> {
             break
         case KB.tovar20:
             bot.sendMessage(msg.chat.id, "Вы выбрали:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 1gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 1gr.+0.5gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -721,7 +722,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin1:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -741,7 +742,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin2:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.5gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -761,7 +762,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin3:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 1gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 1gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -781,7 +782,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin4:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 3gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 3gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -801,7 +802,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin5:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: ЦАО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -821,7 +822,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin6:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: 'GreenDevil' 3gr.\n" +
+                "Товар: ROSS'GreenDevil' 3gr.\n" +
                 "Район: ЦАО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -841,7 +842,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin7:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.5gr.+0.5gr.\n" +
                 "Район: ЦАО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -861,7 +862,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin8:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: 'GreenDevil' 5gr.\n" +
+                "Товар: ROSS'GreenDevil' 5gr.\n" +
                 "Район: ЦАО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -880,7 +881,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin9:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: 'GreenDevil' 1gr.\n" +
+                "Товар: ROSS'GreenDevil' 1gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -900,7 +901,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin10:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -920,7 +921,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin11:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: 'GreenDevil' 3gr.\n" +
+                "Товар: ROSS'GreenDevil' 3gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -939,7 +940,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin12:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.5gr.+0.5gr.\n" +
                 "Район: ЧЕРТАНОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -959,7 +960,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin13:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: 'GreenDevil' 1gr.\n" +
+                "Товар: ROSS'GreenDevil' 1gr.\n" +
                 "Район: БУТОВОn" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -979,7 +980,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin14:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: 'GreenDevil' 3gr.\n" +
+                "Товар: ROSS'GreenDevil' 3gr.\n" +
                 "Район: БУТОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -999,7 +1000,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin15:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: 'GreenDevil' 5gr.\n" +
+                "Товар: ROSS'GreenDevil' 5gr.\n" +
                 "Район: БУТОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -1019,7 +1020,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin16:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 1gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 1gr.+0.5gr.\n" +
                 "Район: БУТОВО\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -1039,7 +1040,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin17:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: 'GreenDevil' 1gr.\n" +
+                "Товар: ROSS'GreenDevil' 1gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -1059,7 +1060,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin18:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -1079,7 +1080,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin19:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: 'GreenDevil' 5gr.\n" +
+                "Товар: ROSS'GreenDevil' 5gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -1099,7 +1100,7 @@ bot.on('message', msg=> {
             break
         case KB.bitcoin20:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 1gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 1gr.+0.5gr.\n" +
                 "Район: ЛЮБЕРЦЫ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
@@ -1119,16 +1120,16 @@ bot.on('message', msg=> {
             break
         case KB.qiwi1:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.3gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 1000р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 1000р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1141,16 +1142,16 @@ bot.on('message', msg=> {
             break
         case KB.qiwi2:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 0.5gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 0.5gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 1200р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 1200р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1163,16 +1164,16 @@ bot.on('message', msg=> {
             break
         case KB.qiwi3:
             bot.sendMessage(msg.chat.id, "Вы приобретаете:\n" +
-                "Товар: KRIS-A29+BONUS'GreenDevil' 1gr.+0.5gr.\n" +
+                "Товар: KRIS-A29+BONUS ROSS'GreenDevil' 1gr.+0.5gr.\n" +
                 "Район: СВАО ВДНХ\n" +
                 "Город: МОСКВА\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 2400р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 2400р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1191,10 +1192,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 3400р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 3400р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1213,10 +1214,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 1000р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 1000р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1235,10 +1236,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 1100р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 1100р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1257,10 +1258,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 1200р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 1200р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1279,10 +1280,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 1500р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 1500р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1301,10 +1302,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 600р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 600р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1323,10 +1324,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 1000р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 1000р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1345,10 +1346,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 1100р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 1100р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1367,10 +1368,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 1200р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 1200р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1389,10 +1390,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 600р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 600р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1411,10 +1412,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 1100р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 1100р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1433,10 +1434,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 1500р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 1500р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1455,10 +1456,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 2400р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 2400р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1477,10 +1478,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 600р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 600р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1499,10 +1500,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 1000р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 1000р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1521,10 +1522,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 1500р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 1500р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1543,10 +1544,10 @@ bot.on('message', msg=> {
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "!!!ВНИМАНИЕ!!!" +
                 "!!!ОПЛАТА ПРИНИМАЕТСЯ ТОЛЬКО С QIWI КОШЕЛЬКА!!!" +
-                "Для получения товара оплатите 2400р. на указанные реквизиты:\n" +
-                "QIWI: +7078492130\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username +
-                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" , {
+                "Для получения товара оплатите 2400р. на указанные реквизиты.\n" +
+                "После оплаты нажмите пункт 'Проверка заказа' в меню ниже" +
+                "QIWI: +77078492130\n" +
+                "КОММЕНТАРИЙ: \n" + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
