@@ -157,11 +157,12 @@ bot.on('message', msg=> {
         case KB.priv:
             bot.sendMessage(msg.chat.id, "АКЦИЯ 'ЕЖЕДНЕВНЫЙ ПРИВНОТ' ОТ FAST SHOP\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
-                "Привнот обновляется ежедневно с 12 по 19 часов по МСК\n" +
+                "Привноты выдаются в боте и на нашем канале https://t.me/FASTSHOP" +
+                "Привнот обновляется ежедневно с 12 по 19 часов по МСК.\n" +
                 "Стандартно в привноте лежит адрес с KRIS-A29+BONUS'GreenDevil' 0.3gr.+0.5gr. либо с  ROSS'GreenDevil' 3gr.\n" +
-                "В праздничные дни выдается привнот с !!!БОЛЕЕ ЩЕДРЫМИ ПОЗИЦИЯМИ!!!\n" +
+                "В праздничные дни выдается привнот с БОЛЕЕ ЩЕДРЫМИ ПОЗИЦИЯМИ\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
-                "Привнот выдается в боте после нажатия кнопки 'Получить привнот' в меню ниже" , {
+                "Для получения привнота выберите пункт 'Получить привнот' в меню ниже" , {
                 reply_markup: {
                     keyboard: [
                         [KB.getpriv], [KB.back]
@@ -173,7 +174,7 @@ bot.on('message', msg=> {
             break
         case KB.getpriv:
             bot.sendMessage(msg.chat.id, "Привнот на сегодня:\n" +
-                "https://privnote.com/wUe3mE3j#Bg3jrgLAQ(МСК)", {
+                "https://privnote.com/FsJt2tDA#ucrFFLif9 (МСК)", {
                 reply_markup: {
                     keyboard: [
                         [ KB.back]
@@ -188,33 +189,33 @@ bot.on('message', msg=> {
                 "Москва\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "СВАО ВДНХ:\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 0.5gr.+0.5gr.\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 1gr.+0.5gr.\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 3gr.+0.5gr.\n" +
+                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 0.5gr.+0.5gr. - 1200р.\n" +
+                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 1gr.+0.5gr. - 2400р.\n" +
+                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 3gr.+0.5gr. - 3400р.\n" +
                 "\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "ЦАО:\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 0.3gr.+0.5gr.\n" +
-                "ROSS\\'GreenDevil\\' 3gr.\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 5gr.\n" +
+                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 0.3gr.+0.5gr. - 1000р.\n" +
+                "ROSS\\'GreenDevil\\' 3gr. - 1100р.\n" +
+                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 5gr. - 1500р.\n" +
                 "\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "ЧЕРТАНОВО:\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 1gr.\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 0.3gr.+0.5gr.\n" +
-                "ROSS\\'GreenDevil\\' 3gr.\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 0.5gr.+0.5gr.\n" +
+                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 1gr. - 600р.\n" +
+                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 0.3gr.+0.5gr. - 1000р.\n" +
+                "ROSS\\'GreenDevil\\' 3gr. - 1100р.\n" +
+                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 0.5gr.+0.5gr. - 1200р.\n" +
                 "\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "БУТОВО:\n" +
-                "ROSS\\'GreenDevil\\' 3gr.\n" +
-                "ROSS\\'GreenDevil\\' 5gr.\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 1gr.+0.5gr.\n" +
+                "ROSS\\'GreenDevil\\' 3gr. - 1100р.\n" +
+                "ROSS\\'GreenDevil\\' 5gr. - 1500р.\n" +
+                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 1gr.+0.5gr. - 2400р.\n" +
                 "\n" +
                 "➖➖➖➖➖➖➖➖➖➖\n" +
                 "ЛЮБЕРЦЫ:\n" +
-                "ROSS\\'GreenDevil\\' 5gr. ЛЮБЕРЦЫ',\n" +
-                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 1gr.+0.5gr.\n" 
+                "ROSS\\'GreenDevil\\' 5gr. - 1500р.\n" +
+                "KRIS-A29+BONUS ROSS\\'GreenDevil\\' 1gr.+0.5gr. - 2400р.\n" 
                 , {
                 reply_markup: {
                     keyboard: [
@@ -255,7 +256,7 @@ bot.on('message', msg=> {
         case KB.zelen:
             bot.sendMessage(msg.chat.id, "В данном городе закончились товары\n" +
                 "Работает ОПТ и ПРЕДЗАКАЗ\n" +
-                "Для оформления ОТПИСАТЬ ОПЕРАТОРУ @FASTMSK_HELP"
+                "Для оформления предзаказа ОТПИСАТЬ ОПЕРАТОРУ В ТЕЛЕГРАМ: @FASTMSK_HELP либо в JABBER: fastmsk@sj.ms"
                 , {
                 reply_markup: {
                     keyboard: [
