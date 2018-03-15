@@ -1149,7 +1149,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1170,7 +1170,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1191,7 +1191,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1212,7 +1212,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1233,7 +1233,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1254,7 +1254,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1275,7 +1275,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1296,7 +1296,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1317,7 +1317,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1338,7 +1338,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1359,7 +1359,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1380,7 +1380,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1401,7 +1401,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1422,7 +1422,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1443,7 +1443,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1464,7 +1464,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1485,7 +1485,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1506,7 +1506,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
@@ -1527,7 +1527,7 @@ bot.on('message', msg=> {
                 "После оплаты нажмите пункт 'Проверка заказа' в меню ниже\n" +
                 "\n" +
                 "QIWI: +79529093996\n" +
-                "КОММЕНТАРИЙ: \n" + msg.from.username , {
+                "КОММЕНТАРИЙ: " + msg.from.username , {
                 reply_markup: {
                     keyboard: [
                         [KB.check],
