@@ -255,7 +255,7 @@ bot.on('message', msg=> {
             break
         case KB.zelen:
             bot.sendMessage(msg.chat.id, "В данном городе закончились товары.\n" +
-                "n\" +
+                "\n" +
                 "Работает ОПТ и ПРЕДЗАКАЗ\n" +
                 "Для оформления предзаказа ОТПИСАТЬ ОПЕРАТОРУ В ТЕЛЕГРАМ: @FASTMSK_HELP либо в JABBER: fastmsk@sj.ms"
                 , {
